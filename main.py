@@ -19,15 +19,16 @@ while True:
     break
 #Add costs together
 def add (rent, utilities, grocery):
-    monthly_costs= rent + utillies + grocery
-    return monthly_costs()
+    monthly_costs= rent + utilities + grocery
+    return monthly_costs
 #Subtract costs from income
 def subtract (income, monthly_costs):
     discretionary_income = income - monthly_costs
-    return discretionary_income()
-if __monthly_costs__ == "__main__":
-income == discretionary_income()
-print(discretionary_income[])
+    return discretionary_income
+
+if __name__ == "__main__":
+    income == discretionary_income()
+print(discretionary_income,[])
 
 
 
