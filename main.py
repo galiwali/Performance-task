@@ -22,24 +22,11 @@ for cost in [rent, utillies, grocery]:
 #Add costs together
 total = rent + utillies + grocery
 monthly_costs= rent + utillies + grocery
-print(f"Your monthly costs is", {total})
+print(f"Your monthly costs is", total)
 
 #Subtract costs from income
-if total >0:
-        def subtract(income, total):
-            discretionary_income = income - total
-            return discretionary_income
-        print("discretionary_income(income - total:)")
-else:
-    print("Try again")
-    if __name__ == "__main__": main()
-    
-
-# #Subtract costs from income
-# def subtract (income, monthly_costs):
-#     discretionary_income = income - monthly_costs
-#     discretionary_income
-# for total in "discretionary_income":
+balance_remaining= int(income)-total
+print(f"You have a remaining balence of",balance_remaining,"dollars this month!")
 
 
 
