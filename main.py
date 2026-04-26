@@ -9,19 +9,25 @@ if income==ValueError:
 monthly_costs = []
 while True:
     rent= int(input("How much is your rent this month? "))
-    utillies= int(input("How much are your utillies this month? "))
+    utilities= int(input("How much are your utilities this month? "))
     grocery= int(input("What is your average grocery costs per month? "))
     break
     
-for cost in [rent, utillies, grocery]:
+for cost in [rent, utilities, grocery]:
     if cost < 0:
         print("Please enter a valid answer")
-        break   
+    again= input("Enter again(press q to quit, enter to repeat)")
+    if again == "q":
+
+        break
+    else:
+        continue
+        
     
 
 #Add costs together
-total = rent + utillies + grocery
-monthly_costs= rent + utillies + grocery
+total = rent + utilities + grocery
+monthly_costs= rent + utilities + grocery
 print(f"Your monthly costs is", total)
 
 #Subtract costs from income
